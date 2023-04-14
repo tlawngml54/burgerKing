@@ -1,0 +1,264 @@
+.order{
+    margin-top: 300px;
+    margin-bottom: 120px;
+}
+.order .inner{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #F8F8F8;
+    border-bottom: 1px solid #F8F8F8;
+}
+.sub2_ham{
+    border: 1px solid #F8F8F8;
+    background-color: #F8F8F8;
+    width: 683px;
+    height: 681px;
+}
+.sub2_ham img{
+    margin-top: 120px;
+}
+.order1 h2{
+    font-size: 3.13rem;
+    margin-top: 97px;
+}
+.return{
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 50px;
+    margin-left: 600px;
+}
+.return:hover{
+    background-color: #000;
+    color: #fff;
+}
+.line{
+    border-top: 1px solid #000;
+    margin-top: 20px;
+}
+.order1 h3{
+    font-size: 1.9rem;
+    margin-top: 30px;
+    margin-bottom: 43px;
+}
+select{
+    padding: 6px 78px 6px 5px;
+    font-size: 1rem;
+    cursor: url(../images/mouse1_main.png), auto;
+}
+#drink_sub1{
+    margin-left: 36px;
+}
+.order1 h4{
+    font-size: 0.9rem;
+    margin-top: 18px;
+    opacity: 60%;
+}
+.pay{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    position: relative;
+}
+.pay p{
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+.pay p span{
+    color: #D72300;
+}
+.pay p img{
+    position: relative;
+    top: 3px;
+    left: 0;
+}
+#men_count{
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    right: 15px;
+
+}
+.number_input button{
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    border: 2px solid #000;
+    cursor: pointer;
+    background-color: #fff;
+}
+.number_input input{
+    padding-left: 40px;
+    /* margin-left: 20px; */
+}
+.up1{
+    position: relative;
+}
+.down1{
+    position: relative;
+    left: -33px;
+    z-index: 1;
+}
+.sub2_btn{
+    margin-top: 26px;
+    text-align: center;
+}
+.sub2_btn img{
+    border:  2px solid #000;
+    padding: 4px 36px;
+    border-radius: 50px;
+}
+.sub2_btn img:hover{
+    background-color: #000;
+}
+.sub2_btn .order2{
+    border: 2px solid #000;
+    padding: 13px 20px;
+    border-radius: 50px;
+    position: relative;
+    top: -16px;
+    left: 2px;
+}
+.sub2_btn .order2:hover{
+    background-color: #D72300;
+    border: 2px solid #D72300;
+    color: #ffffff;
+}
+
+/******************미디어쿼리 시작**********************/
+@media all and (max-width:770px){
+
+    .order{
+        margin-top: 400px;
+        margin-bottom: 120px;
+    }
+    .order .inner{
+        display: block;
+        width: 100%;
+    }
+    .sub2_ham{
+        width: 95%;
+        height: 95%;
+        margin: 0 auto;
+        padding: 60px 0;
+    }
+    .sub2_ham img{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .order1{
+        position: relative;
+    }
+    .order1 h2{
+        font-size: 1.6rem;
+        margin-top: 20px;
+        margin-inline: 15px;
+        margin-bottom: 20px;
+    }
+    .return{
+        display: none;
+    }
+    .line{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .order1 h3{
+        width: 90%;
+        font-size: 1.1rem;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-inline: 15px;
+    }
+    select{
+       padding: 0;
+        width: 8.5rem;
+        height: 2.75rem;
+        cursor: auto;
+        border: 1px solid #555;
+        border-radius: 5px;
+        font-size: 0.93rem;
+        white-space : nowrap;
+        /* margin-inline: 5px; */
+    }
+    #drink_sub1{
+        margin-left: 0;
+    }
+    #side{
+       margin-left: 15px;
+    }
+    .order1 h4{
+        font-size: 1.1rem;
+        margin-top: 18px;
+        margin-inline: 15px;
+        opacity: 60%;
+        width: 90%;
+    }
+    .pay{
+        width: 100%;
+        margin-top: 50px;
+        /* padding-left: 10px; */
+        margin-inline: 15px;
+        margin-bottom: 20px;
+        position: relative;
+        display: flex;
+    }
+    .pay p{
+        margin-top: 0px;
+        font-size: 1.2rem;
+        padding-right: 10px;
+    }
+    .pay p span{
+        font-size: 1.2rem;
+    }
+    .pay p img{
+        position: relative;
+        top: 6px;
+        right: 0;
+    }
+    #men_count{
+        right: 45px;
+        border: 1px solid #777;
+        width: 80px;
+        height: 35px;
+    }
+    .number_input button{
+        border: 1px solid #777;
+        width: 35px;
+        height: 35px;
+    }
+    .up1{
+        position: relative;
+        left: -30px;
+    }
+    .down1{
+        position: relative;
+        left: -60px;
+        z-index: 1;
+    }
+    .number_input input{
+        padding-left: 37px;
+    }
+    .sub2_btn img{
+        border:  2px solid #000;
+        padding: 4px 36px;
+        border-radius: 50px;
+        width: 105px;
+    }
+    .sub2_btn img:hover{
+        background-color: #000;
+    }
+    .sub2_btn .order2{
+        border: 2px solid #000;
+        padding: 12px 20px;
+        border-radius: 50px;
+        position: relative;
+        top: -15px;
+        left: 2px;
+    }
+
+}
+

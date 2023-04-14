@@ -1,0 +1,408 @@
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 100,700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'yg-jalnan';
+}
+body{
+    background-color: #ffffff;
+    cursor: url(../images/mouse1_main.png), auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+    cursor: url(../images/mouse1_main.png), auto;
+}
+li{
+    list-style: none;
+}
+header #login a{
+    font-family: 'LINESeedKR-Bd';
+}
+footer p, footer a, footer li{
+    font-family: 'LINESeedKR-Bd';
+}
+.header_inner{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.inner{
+    margin: 0 auto;
+    width: 1440px;
+}
+/*******************공통**********************/
+/*******************header**********************/
+#main_header{
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px rgba(0,0,0,.15);
+}
+#main_header #login{
+    text-align: right;
+    padding-top: 12px;
+}
+#main_header #login a{
+    padding-left: 20px;
+    font-size: 0.88rem;
+}
+#main_header #header_logo{
+    width: 20%;
+    height: 40%;
+    position: relative;
+    top: -10px;
+}
+#header_right{
+    display: flex;
+}
+nav{
+    width: 80%;
+    background-color: #ffffff;
+}
+nav > ul{
+    display: flex;
+    margin-left: 30px;
+}
+nav > ul > li{
+    padding: 20px 50px;
+    font-size: 1.378rem;
+
+}
+.depth{
+    background-color: #ffffff;
+    display: none;
+    height: 290px;
+    position:relative;
+    z-index: 999;
+    width: 1920px;
+    left: -600px;
+}
+.depth .inner{
+    width: 1400px;
+    display: flex;
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+.depth .inner ul{
+    width: 10%;
+    position: relative;
+    left: 650px;
+    z-index: 999;
+}
+.depth .inner ul:nth-child(1){
+    padding-left: 20px;
+}
+.depth .inner ul:nth-child(2){
+    padding-left: 48px;
+}
+.depth .inner ul:nth-child(3){
+    margin-left: 85px;
+}
+.depth .inner ul:nth-child(4){
+    margin-left: 39px;
+}
+.depth .inner ul li{
+    line-height: 1.8;
+}
+/*******************sec1**********************/
+.sec1{
+    width: 100%;
+    height: 690px;
+    cursor: url(../images/mouse1_main.png), auto;
+}
+#main_carousel{
+    width: 1920px;
+    height: 540px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,0);
+   /*  overflow: hidden; */
+}
+.main_slide{
+    overflow: hidden;
+    width: 1920px;
+    height: 540px;
+    position: absolute;
+    top: 150px;
+    left: 100%;
+    background-size: cover;
+    background-color: black;
+}
+.sec1 .main_slide:nth-child(1){
+    background-image: url(../images/mainslide1.png);
+    background-repeat: no-repeat;
+}
+.sec1 .main_slide:nth-child(2){
+    background-image: url(../images/mainslide2.png);
+    background-repeat: no-repeat;
+} 
+.sec1 .main_slide:nth-child(3){
+    background-image: url(../images/mainslide3.png);
+    background-repeat: no-repeat;
+} 
+.sec1 .main_slide:nth-child(4){
+    background-image: url(../images/mainslide4.png);
+    background-repeat: no-repeat;
+}
+#myvideo{
+   margin-left: 450px;
+} 
+.arrow{
+    width:100px;
+    height: 100px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    position: absolute;
+    top:370px;
+    cursor: url(../images/mouse1_main.png), auto;
+}
+.left{
+    left:0;
+}
+.right{
+    right:0;
+}
+/*******************sec2**********************/
+.sec2{
+    position: relative;
+    height: 872px;
+}
+.sec2 h2, .sec4 h2{
+    text-align: center;
+    padding-top: 85px;
+    font-size: 2.5rem;
+}
+.arrow1 .left1{
+    padding-right: 10px;
+}
+.train{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.train img{
+    width: 450px;
+    height: 450px;
+}
+.content_in{
+    padding-top: 20px;
+}
+.con{
+    padding-left: 20px;
+}
+.con_img{
+    overflow: hidden;
+}
+.con_img img{
+    position: relative;
+}
+.con_img img:hover{
+    cursor: url(../images/mouse2_main.png), auto;
+}
+.sec2_btn{
+    text-align: center;
+    padding-top: 70px;
+}
+.sec2_btn a{
+    background-color: #D72300;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 25px 50px;
+}
+.sec2_btn span{
+    position: relative;
+    left: 10px;
+}
+/*******************sec3**********************/
+.sec3{
+    height: 309px;
+    background-color: #F4EBDC;
+}
+.del{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 55px;
+}
+.del img{
+    padding: 0 20px;
+}
+/*******************sec4**********************/
+.sec4{
+    height: 880px;
+}
+.sec4 img{
+    width: 460px;
+    height: 584px;
+}
+.sec4 h2{
+    padding-bottom: 80px;
+}
+.insta{
+    display: flex;
+    justify-content: space-between;
+}
+/*******************sec5**********************/
+.sec5{
+    height: 636px;
+    background-image: url(../images/fire__main.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.fire{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 70px;
+}
+#gs{
+    width: 500px;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-right: 80px;
+}
+#gs h3{
+    padding-top: 55px;
+    padding-bottom: 18px;
+    font-size: 1.56rem;
+}
+#gs h4{
+    color: #D72300;
+    font-size: 3.13rem;
+    padding-bottom: 18px;
+}
+#gs p{
+    padding-top: 18px;
+    font-size: 1.25rem;
+}
+#gs_btn{
+    display: flex;
+    justify-content: center;
+    padding-top: 23px;
+}
+#gs_btn1 a, #gs_btn2 a{
+    background-color: #D72300;
+    color: #ffffff;
+    padding: 13px 30px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    margin-right: 11px;
+}
+/*******************footer**********************/
+#main_footer{
+    height: 300px;
+    background-color: #512314;
+    color: #ffffff;
+}
+#main_footer a{
+    color: #ffffff;
+}
+#main_footer .inner{
+    display: flex;
+    justify-content: space-between;
+}
+#footer_logo{
+    padding-top: 56px;
+    padding-bottom: 26px;
+}
+#footer_left p{
+    line-height: 1.5;
+    padding-bottom: 26px;
+}
+#footer_right{
+    padding-top: 61px;
+}
+#footer_right ul{
+    display: flex;
+}
+#footer_right ul li{
+    padding-left: 25px;
+}
+#footer_right ul li::after{
+    content: "|";
+    position: relative;
+    left: 13px;
+}
+#footer_right ul li:nth-child(4)::after{
+    content: "";
+}
+#footer_btn{
+    padding-top: 18px;
+    margin-left: 145px;
+}
+#footer_btn a{
+    border: 1px solid #ffffff;
+    padding: 8px 30px;
+    border-radius: 50px;
+}
+/******************side btn**********************/
+.coupon{
+    width: 125px;
+    height: 125px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #FFAA01;
+    position: fixed;
+    right: 30px;
+    top: 660px;
+    background-image: url(../images/coupon_main.png);
+    background-repeat: no-repeat;
+    background-position: 35px 20px;
+    text-align: center;
+    padding-top: 82px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    box-shadow: 0 30px 30px rgba(0,0,0,0.1);
+
+}
+.customer_center{
+    width: 125px;
+    height: 125px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: fixed;
+    right: 30px;
+    top: 800px;
+    background-image: url(../images/phoneoperator_main.png);
+    background-repeat: no-repeat;
+    background-position: 32px 20px;
+    text-align: center;
+    padding-top: 82px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    box-shadow: 0 30px 30px rgba(0,0,0,0.1);
+
+}
+
+/******************미디어쿼리 시작**********************/
+@media all and (max-width:770px){
+
+    *{
+       font-size: 14px;
+    }
+
+};
